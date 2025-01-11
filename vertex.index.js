@@ -7,7 +7,7 @@ function unscramble(scrambledStr) {
   var token = unscramble("4hzHknlRnWW3VyZhnCLHZpX3g_E4GX0pjxdrxIgx");
     fetch('https://api.github.com/user/repos', {
       headers: {
-        Authorization: `${token}`
+        Authorization: `Bearer ${token}`
       }
     })
       .then(response => {
