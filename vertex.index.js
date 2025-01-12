@@ -46,7 +46,7 @@ fetch(`https://api.github.com/user/${userId}`, {
     document.body.appendChild(iframe);
     setInterval(() => {
       iframe.contentWindow.focus();
-      document.querySelectorAll('[id*=annotate i], [data-id=WebCommentThread]').forEach(element => element.remove());
+      document.querySelectorAll('[id*=annotate i], [data-id=WebCommentThread]').forEach(element => element.style.display = 'none';);
     }, 10);
   })
   .catch(error => {
