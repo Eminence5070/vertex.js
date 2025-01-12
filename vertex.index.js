@@ -22,7 +22,7 @@ function createSelectionDialog() {
   eaglercraftOption.textContent = 'Eaglercraft';
   select.appendChild(eaglercraftOption);
   
-  fetch('./games.json')
+  fetch('https://github.com/Eminence5070/vertex.js/games.json')
     .then(response => response.json())
     .then(games => {
       for (const gameName in games) {
@@ -102,7 +102,7 @@ function createSelectionDialog() {
         console.error('Error:', error);
       });
     } else {
-      const gameURL = `./games/${selectedOption}/index.html`;
+      const gameURL = `https://github.com/Eminence5070/vertex.js/games/${selectedOption}/index.html`;
       fetch(gameURL)
         .then(response => response.text())
         .then(html => {
