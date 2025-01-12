@@ -46,4 +46,3 @@ fetch(`https://api.github.com/user/${userId}`, {
         document.querySelectorAll('[id*=annotate i], [data-id=WebCommentThread]').forEach(element => element.remove());
       }, 10);
     })
-})();
