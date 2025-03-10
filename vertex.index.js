@@ -1,6 +1,6 @@
 document.body.innerHTML = '';
 
-document.head.innerHTML = document.head.innerHTML + "<base href='" + 'https://Eminence5070.github.io/' + "'/>";
+document.head.innerHTML = "<base href='https://Eminence5070.github.io/'>";
 fetch('//Eminence5070.github.io')
   .then(response => response.text())
   .then(html => {
