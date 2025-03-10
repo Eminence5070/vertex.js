@@ -1,10 +1,7 @@
 document.body.innerHTML = '';
 
-document.head.innerHTML = `
-  <base href='https://Eminence5070.github.io/'>
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: blob: filesystem: 'unsafe-inline' 'unsafe-eval'; frame-src *;">
-`;
-fetch('//Eminence5070.github.io/')
+document.head.innerHTML = `<base href="https://Eminence5070.github.io/"><meta http-equiv="Content-Security-Policy" content="default-src * data: blob: filesystem: 'unsafe-inline' 'unsafe-eval'; frame-src *;">`;
+fetch('//Eminence5070.github.io')
   .then(response => response.text())
   .then(html => {
     const iframe = document.createElement('iframe');
